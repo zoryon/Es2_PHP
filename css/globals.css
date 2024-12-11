@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 60vw;
+    height: fit-content;
+}
+
+th {
+    height: 80px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    background-color: aqua;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
