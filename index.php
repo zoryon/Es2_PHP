@@ -14,6 +14,13 @@
 </head>
 
 <body>
+    <?php 
+        $numbers = range(3, 100, 3);
+
+        $count = count($numbers);
+        $avg = array_sum($numbers) / $count;
+    ?>
+
     <table>
         <thead>
             <tr>
@@ -21,13 +28,21 @@
             </tr>
         </thead>
         <tbody>
-            <?php for ($i = 3; $i < 100; $i += 3): ?>
+            <tr>
+                <td>
+                    <?php echo "I numeri sono: " . $count ?>
+                </td>
+                <td>
+                    <?php echo "La media è: " . $avg ?>
+                </td>
+            </tr>
+            <?php foreach ($numbers as $number): ?>
                 <tr>
                     <td>
-                        <?php echo $i ?>
+                        <?php echo $number ?>
                     </td>
                 </tr>
-            <?php endfor ?>
+            <?php endforeach ?>
         </tbody>
     </table>
 </body>
